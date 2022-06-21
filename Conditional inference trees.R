@@ -30,5 +30,3 @@ somers2(prob.crf.do, as.numeric(do$CONSTRUCTION) - 1)
 
 pred.crf.train <- predict(do.rf, OOB = FALSE)
 table(pred.crf.train, do$CONSTRUCTION)
-
-somers2(prob.crf.train, as.numeric(do$CONSTRUCTION) - 1)
